@@ -24,4 +24,8 @@ spec:
               envFrom:
                 - secretRef:
                     name: renovate-env
+          dnsConfig:
+            nameservers:
+            - 8.8.8.8
+            - 8.8.4.4
           restartPolicy: Never
