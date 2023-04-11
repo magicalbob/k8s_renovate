@@ -24,4 +24,6 @@ spec:
               envFrom:
                 - secretRef:
                     name: renovate-env
+          imagePullSecrets:
+            - name: my-docker-credentials
           restartPolicy: Never
