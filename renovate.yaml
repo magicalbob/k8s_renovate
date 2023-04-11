@@ -26,4 +26,8 @@ spec:
                     name: renovate-env
           imagePullSecrets:
             - name: my-docker-credentials
+          dnsConfig:
+            nameservers:
+            - 8.8.8.8
+            - 8.8.4.4
           restartPolicy: Never
