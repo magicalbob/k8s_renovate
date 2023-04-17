@@ -24,6 +24,8 @@ spec:
               envFrom:
                 - secretRef:
                     name: renovate-env
+          imagePullSecrets:
+            - name: my-docker-credentials
           dnsConfig:
             nameservers:
             - 8.8.8.8
